@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">Holiday Countdown</div>
+    <div class="container">
+        <div class="upper-timer">
+            <div class="time" id="hours">Hours</div>
+            <div class="time" id="minutes">Minutes</div>
+            <div class="time" id="seconds">Seconds</div>
+        </div>
+        <div class="countdown" id="days">Days</div>
+    </div>
+    <div class="motd" id="motd">Message of the Day</div>
+    <div class="buttons">
+        <button id="settingsButton" class="icon-button"><i class="fas fa-cog"></i></button>
+        <button id="infoButton" class="icon-button"><i class="fas fa-info-circle"></i></button>
+    </div>
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close" id="closeInfoModal">&times;</span>
+            <p>Made with 💖 by Aeroshide</p>
+        </div>
+    </div>
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <span class="close" id="closeSettingsModal">&times;</span>
+            <label for="dummyToggle">Get Freaky 🥵: </label>
+            <label class="switch">
+                <input type="checkbox" id="dummyToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
