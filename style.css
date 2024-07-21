@@ -165,3 +165,20 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.event p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #666;
+}
+
