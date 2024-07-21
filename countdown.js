@@ -57,6 +57,14 @@ function updateCountdown(targetDate, elements) {
     const now = new Date();
     const timeDifference = targetDate - now;
 
+    if (timeDifference <= 0) {
+        elements.daysElement.innerHTML = '0 Days';
+        elements.hoursElement.innerHTML = '0 Hours';
+        elements.minutesElement.innerHTML = '0 Minutes';
+        elements.secondsElement.innerHTML = '0 Seconds';
+        return;
+    }
+
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
@@ -67,6 +75,7 @@ function updateCountdown(targetDate, elements) {
     elements.minutesElement.innerHTML = `${minutes} Minutes`;
     elements.secondsElement.innerHTML = `${seconds} Seconds`;
 }
+
 
 function populateEventsList(events, container) {
     container.innerHTML = events
